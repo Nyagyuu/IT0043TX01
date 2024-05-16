@@ -56,18 +56,20 @@ h2{
 
 .Technology{
     background-color: yellow;
-    width: 215px;
+    width: 236px;
     border:  solid yellow;
     padding: 1px;
     text-align: right;
+    font-family: kanit;
 }
 
 .school{
     background-color: green;
-    width: 215px;
+    width: 236px;
     border:  solid green;
     padding: 1px;
     text-align: right;
+    font-family: kanit;
 }
 
 .image1{
