@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90vw;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+width: 30%;
+border-radius: 1rem;
+text-align: center;
+margin: 1rem 1rem;
+vertical-align: top;
+border-width: 10px;
+height: auto;
+box-shadow: 10px 10px 10px black;
+}
+
+.image{
+    background: url(img/pokemon_wallpaper___poke_ball_theme_by_0trinima0_dd2zouo-pre.jpg);
+    
+}
+
