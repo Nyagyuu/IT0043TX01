@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card1{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+p{
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.image-container{
+    border: 1px solid black;
+    background-image: url(img/pokemon_wallpaper___poke_ball_theme_by_0trinima0_dd2zouo-pre.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.details{
+    border: 10px solid rgb(57, 3, 39);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.darkpurple{
+    background-color:  rgb(57, 3, 39);
+    color: aliceblue;
+}
+
+.card2{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card3{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.card4{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.card5{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.card6{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.container1{
+    text-align: center;
+    width: 550px;
+    margin: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

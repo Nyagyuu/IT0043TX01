@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(istockphoto-1350036914-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 320px;
+    height: 750px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    row-gap: 5px;
+}
+
+.name{
+    font-size: 55px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+    text-align: justify;
+}
+
+.descriptionD{
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+    text-align: justify;
+    margin: 20;
+}
+
+.card-image{
+    position: relative;
+
+    border-radius: 15px;
+    background-image: url(/tsa4/img/pokemon_wallpaper___poke_ball_theme_by_0trinima0_dd2zouo-pre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-image .img-card{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.add{
+    border: none;
+    color: whitesmoke;
+    background-color: lightskyblue;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.release{
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(172, 72, 182);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card2{
+    width: 320px;
+    height: 650;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    row-gap: 5px;
+}
+
+.name{
+    font-size: 55px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+    text-align: justify;
+}
+
+.card-image2{
+    position: relative;
+
+    border-radius: 15px;
+    background-image: url(/tsa4/img/pokemon_wallpaper___poke_ball_theme_by_0trinima0_dd2zouo-pre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: auto;
+}
+
+.card-image .img-card{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.add2{
+    border: none;
+    color: whitesmoke;
+    background-color: lightskyblue;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.release2{
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(172, 72, 182);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.Ghost{
+    background-color: purple;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.Poison{
+    background-color: purple;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.Normal{
+    background-color: rgb(97, 95, 95);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.Water{
+    background-color: rgb(17, 125, 193);
+    border-radius: 10px;
+    margin: 26px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.Fire{
+    background-color: rgb(220, 30, 30);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.Fighting{
+    background-color: rgb(227, 145, 4);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.card-image2 .img-card2{
+    height: 315px;
+    width: 315px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.Fighting{
+    background-color: rgb(227, 145, 4);
+    border-radius: 10px;
+    margin: px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.Psychic{
+    background-color: rgb(235, 63, 230);
+    border-radius: 10px;
+    margin: px;
+    padding: 4px;
+    color: white;
+    font-weight: 600;
+}
