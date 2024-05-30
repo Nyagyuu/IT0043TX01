@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body{
+body {
     height: 100%;
-    margin: 0;
+    margin: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: Kanit;
+    background-image: url(Pokeball.png);
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
 }
 
-.item{
-    margin:5px;
-    flex: 1 1 calc(100%/4);
-    height: calc(100%/3);
+.item {
+    flex: 1 0 calc(100% / 4);
+    height: calc(100% / 3);
     box-sizing: border-box;
     border: 1px solid #ccc;
     display: flex;
@@ -26,34 +26,42 @@ body{
     align-items: center;
     overflow: hidden;
     position: relative;
+    text-align: center;
     transition: flex-basis 0.5s, height 0.5s;
 }
 
-.item img{
+.item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 0.90;
+    opacity: 0.75;
 }
 
-.item1{ background-color: rgb(255, 255, 0);}
-.item2{ background-color: rgb(34, 131, 71);}
-.item3{ background-color: rgb(255, 174, 0);}
-.item4{ background-color: rgb(62, 48, 253);}
-.item5{ background-color: rgb(202, 172, 88);}
-.item6{ background-color: rgb(202, 84, 196);}
-.item7{ background-color: rgb(253, 218, 151);}
-.item8{ background-color: rgb(252, 183, 231);}
-.item9{ background-color: rgb(255, 255, 110);}
-.item10{ background-color: rgb(255, 255, 123);}
-.item11{ background-color: rgb(0, 68, 255);}
-.item12{ background-color: rgb(0, 110, 255);}
+.item span{
+    z-index: 1;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 5px;
+    margin-bottom: 10px;
+}
 
-.container{
+.item1 { background-color: #fffecc; }
+.item2 { background-color: #d5ffcc; }
+.item3 { background-color: #fff1cc; }
+.item4 { background-color: #ccf9ff; }
+.item5 { background-color: #f6ffcc; }
+.item6 { background-color: #ffccfc; }
+.item7 { background-color: #ffefcc; }
+.item8 { background-color: #ffccfb; }
+.item9 { background-color: #fcffcc; }
+.item10 { background-color: #fffecc; }
+.item11 { background-color: #ccd4ff; }
+.item12 { background-color: #e8ccff; }
+
+.container {
     flex-direction: row;
 }
 
@@ -63,9 +71,47 @@ body{
     display: flex;
 }
 
-@media (max-aspect-ratio: 4/3) {
+.item:hover{
+    transform: scale(1.05);
+    background-color: #bab4be;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 0 33.33%;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 580px){
+    .item {
+        flex: 1 0 100%;
+        height: Auto;
+    } 
+}
+
+@media (max-width: 250px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .item{
-        flex: 1 1 calc(100%/4);
-        height: calc(100%/3);
+        flex: 1 0 48%;
+        height: auto;
+        margin: 10px 1%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .item img{
+        width: 100px;
+        height: auto;
+    }
+
+    .item span{
+        padding: 10px 0 0 0
     }
 }
