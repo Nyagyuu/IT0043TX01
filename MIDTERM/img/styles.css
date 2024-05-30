@@ -1,11 +1,11 @@
 body {
     height: 100%;
-    margin: 0;
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-image: url(poke);
+    background-image: url(Pokeball.png);
 }
 
 .container {
@@ -38,6 +38,7 @@ body {
     z-index: 0;
     opacity: 0.75;
 }
+
 .item1 { background-color: #fffecc; }
 .item2 { background-color: #d5ffcc; }
 .item3 { background-color: #fff1cc; }
@@ -51,32 +52,19 @@ body {
 .item11 { background-color: #ccd4ff; }
 .item12 { background-color: #e8ccff; }
 
-
 .container {
-
     flex-direction: row;
-
 }
 
 .container:after {
-
     content: '';
-
     flex: auto;
-
     display: flex;
-
 }
 
-
 @media (max-aspect-ratio: 4/3) {
-
     .item {
-
         flex: 1 1 calc(100% / 3);
-
         height: calc(100% / 4);
-
     }
-
 }
