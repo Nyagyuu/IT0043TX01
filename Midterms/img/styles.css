@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Kanit;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.item{
+    margin:5px;
+    flex: 1 1 calc(100%/4);
+    height: calc(100%/3);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: flex-basis 0.5s, height 0.5s;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.90;
+}
+
+.item1{ background-color: rgb(255, 255, 0);}
+.item2{ background-color: rgb(34, 131, 71);}
+.item3{ background-color: rgb(255, 174, 0);}
+.item4{ background-color: rgb(62, 48, 253);}
+.item5{ background-color: rgb(202, 172, 88);}
+.item6{ background-color: rgb(202, 84, 196);}
+.item7{ background-color: rgb(253, 218, 151);}
+.item8{ background-color: rgb(252, 183, 231);}
+.item9{ background-color: rgb(255, 255, 110);}
+.item10{ background-color: rgb(255, 255, 123);}
+.item11{ background-color: rgb(0, 68, 255);}
+.item12{ background-color: rgb(0, 110, 255);}
+
+.container{
+    flex-direction: row;
+}
+
+.container:after {
+    content: '';
+    flex: auto;
+    display: flex;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .item{
+        flex: 1 1 calc(100%/4);
+        height: calc(100%/3);
+    }
+}
