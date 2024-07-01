@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <button onclick="resetFlexbox()">Reset Flexbox</button>
+        <div>
+            <label for="gap">Gap</label>
+            <input type="number" id="gap" value="0" oninput="updateGap()">
+        </div>
+        <div>
+            <button onclick="setFlexDirection('row')">Row</button>
+            <button onclick="setFlexDirection('column')">Column</button>
+        </div>
+        <div>
+            <button onclick="setJustifyContent('start')">Start</button>
+            <button onclick="setJustifyContent('center')">Center</button>
+            <button onclick="setJustifyContent('end')">End</button>
+            <button onclick="setJustifyContent('space-between')">Space Between</button>
+            <button onclick="setJustifyContent('space-around')">Space Around</button>
+            <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+        </div>
+        <div>
+            <button onclick="setAlignItems('start')">Start</button>
+            <button onclick="setAlignItems('center')">Center</button>
+            <button onclick="setAlignItems('end')">End</button>
+        </div>
+        <div>
+            <button onclick="setFlexGrow(1, 1)">Grow Box 1</button>
+            <button onclick="setFlexGrow(2, 1)">Grow Box 2</button>
+            <button onclick="setFlexGrow(3, 1)">Grow Box 3</button>
+            <button onclick="setFlexGrow(1, 0)">Reset Box 1</button>
+            <button onclick="setFlexGrow(2, 0)">Reset Box 2</button>
+            <button onclick="setFlexGrow(3, 0)">Reset Box 3</button>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item" id="box1">1</div>
+        <div class="flex-item" id="box2">2</div>
+        <div class="flex-item" id="box3">3</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
